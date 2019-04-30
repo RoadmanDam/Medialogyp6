@@ -10,25 +10,22 @@ ModelImporter:
     100008: BrakeDisk1
     100010: BrakeDisk2
     100012: BrakeDisk3
-    100014: Chassis
-    100016: //RootNode
-    100018: Glasses
-    100020: Interior
-    100022: RearLight
-    100024: RearMirror
-    100026: Roller
-    100028: Wheel0_graphics
-    100030: Wheel1_graphics
-    100032: Wheel2_graphics
-    100034: Wheel3_graphics
-    100036: Burger
-    100038: Burger Darkness
-    100040: Burger door
-    100042: Button Base
-    100044: Button Base.001
-    100046: Button Interactable
-    100048: Button Interactable.001
-    100050: Camera
+    100014: Burger Darkness
+    100016: Burger door
+    100018: Camera
+    100020: Chassis
+    100022: DashFlap
+    100024: DashFlap Inside
+    100026: //RootNode
+    100028: Glasses
+    100030: Interior
+    100032: RearLight
+    100034: RearMirror
+    100036: Roller
+    100038: Wheel0_graphics
+    100040: Wheel1_graphics
+    100042: Wheel2_graphics
+    100044: Wheel3_graphics
     400000: Body
     400002: Body.001
     400004: Body.002
@@ -36,38 +33,35 @@ ModelImporter:
     400008: BrakeDisk1
     400010: BrakeDisk2
     400012: BrakeDisk3
-    400014: Chassis
-    400016: //RootNode
-    400018: Glasses
-    400020: Interior
-    400022: RearLight
-    400024: RearMirror
-    400026: Roller
-    400028: Wheel0_graphics
-    400030: Wheel1_graphics
-    400032: Wheel2_graphics
-    400034: Wheel3_graphics
-    400036: Burger
-    400038: Burger Darkness
-    400040: Burger door
-    400042: Button Base
-    400044: Button Base.001
-    400046: Button Interactable
-    400048: Button Interactable.001
-    400050: Camera
+    400014: Burger Darkness
+    400016: Burger door
+    400018: Camera
+    400020: Chassis
+    400022: DashFlap
+    400024: DashFlap Inside
+    400026: //RootNode
+    400028: Glasses
+    400030: Interior
+    400032: RearLight
+    400034: RearMirror
+    400036: Roller
+    400038: Wheel0_graphics
+    400040: Wheel1_graphics
+    400042: Wheel2_graphics
+    400044: Wheel3_graphics
     2000000: Camera
-    2100000: license_plate
-    2100002: tire
-    2100004: rim
-    2100006: exhaust
-    2100008: essence_cap
-    2100010: body_mat
-    2100012: chrome
-    2100014: chrome_window
-    2100016: blinkers
-    2100018: logo1
-    2100020: rear_light
-    2100022: interior
+    2100000: interior
+    2100002: exhaust
+    2100004: license_plate
+    2100006: tire
+    2100008: rim
+    2100010: essence_cap
+    2100012: body_mat
+    2100014: chrome
+    2100016: chrome_window
+    2100018: blinkers
+    2100020: logo1
+    2100022: rear_light
     2100024: Screen
     2100026: Black
     2100028: glass_mat
@@ -79,7 +73,6 @@ ModelImporter:
     2100040: roller
     2100042: chrome_roller
     2100044: CarPaint
-    2100046: No Name
     2300000: Body
     2300002: Body.001
     2300004: Body.002
@@ -87,23 +80,20 @@ ModelImporter:
     2300008: BrakeDisk1
     2300010: BrakeDisk2
     2300012: BrakeDisk3
-    2300014: Chassis
-    2300016: Glasses
-    2300018: Interior
-    2300020: RearLight
-    2300022: RearMirror
-    2300024: Roller
-    2300026: Wheel0_graphics
-    2300028: Wheel1_graphics
-    2300030: Wheel2_graphics
-    2300032: Wheel3_graphics
-    2300034: Burger
-    2300036: Burger Darkness
-    2300038: Burger door
-    2300040: Button Base
-    2300042: Button Base.001
-    2300044: Button Interactable
-    2300046: Button Interactable.001
+    2300014: Burger Darkness
+    2300016: Burger door
+    2300018: Chassis
+    2300020: DashFlap
+    2300022: DashFlap Inside
+    2300024: Glasses
+    2300026: Interior
+    2300028: RearLight
+    2300030: RearMirror
+    2300032: Roller
+    2300034: Wheel0_graphics
+    2300036: Wheel1_graphics
+    2300038: Wheel2_graphics
+    2300040: Wheel3_graphics
     3300000: Body
     3300002: Body.001
     3300004: Body.002
@@ -111,218 +101,51 @@ ModelImporter:
     3300008: BrakeDisk1
     3300010: BrakeDisk2
     3300012: BrakeDisk3
-    3300014: Chassis
-    3300016: Glasses
-    3300018: Interior
-    3300020: RearLight
-    3300022: RearMirror
-    3300024: Roller
-    3300026: Wheel0_graphics
-    3300028: Wheel1_graphics
-    3300030: Wheel2_graphics
-    3300032: Wheel3_graphics
-    3300034: Burger
-    3300036: Burger Darkness
-    3300038: Burger door
-    3300040: Button Base
-    3300042: Button Base.001
-    3300044: Button Interactable
-    3300046: Button Interactable.001
-    4300000: Body.002
-    4300002: Wheel1_graphics
-    4300004: Wheel3_graphics
-    4300006: Wheel2_graphics
-    4300008: Wheel0_graphics
-    4300010: Body.001
-    4300012: RearLight
-    4300014: Interior
-    4300016: Glasses
-    4300018: Chassis
-    4300020: BrakeDisk3
-    4300022: BrakeDisk1
-    4300024: BrakeDisk2
-    4300026: BrakeDisk0
-    4300028: Roller
-    4300030: RearMirror
-    4300032: Body
-    4300034: Button Base
-    4300036: Button Interactable
-    4300038: Button Base.001
-    4300040: Button Interactable.001
-    4300042: Burger door
-    4300044: Burger Darkness
-    4300046: Burger
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Black
-    second: {fileID: 2100000, guid: d3b594132218648d1a6a45a6adbd7896, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Black glass
-    second: {fileID: 2100000, guid: df74291ac9cc1406cb06bdc804a5da32, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CarPaint
-    second: {fileID: 2100000, guid: bd9b1b3c8ab9d45d0ab6c15c15cfc945, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 8b5c7efb3dc491c48895cdc221dc0d68, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: f7bd37232c6f96e43b6f970bb9851c44, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 46d9900318c474a47a11b1b3b918f046, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 9d1d8e95d0683374989dafc1e0cd3e8b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.004
-    second: {fileID: 2100000, guid: 79e2a2ec767ab8343a7e316d96453261, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.005
-    second: {fileID: 2100000, guid: 3806945e203c7de4fab505f2b43e275e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.006
-    second: {fileID: 2100000, guid: 79e2a2ec767ab8343a7e316d96453261, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.007
-    second: {fileID: 2100000, guid: 79e2a2ec767ab8343a7e316d96453261, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.008
-    second: {fileID: 2100000, guid: 79e2a2ec767ab8343a7e316d96453261, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.009
-    second: {fileID: 2100000, guid: 2e7f860630f730c4fa8d120d29ef79ed, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Screen
-    second: {fileID: 2100000, guid: dee1ae04829514942877e5c27fb92988, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: blinkers
-    second: {fileID: 2100000, guid: e92f81c963a23402299b184a457927f8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: body_mat
-    second: {fileID: 2100000, guid: fbbed6767849e43c88bde071d9c99004, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: brake_disk
-    second: {fileID: 2100000, guid: 048e2ce816435440cbbcfe78fd7cb411, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: chassis
-    second: {fileID: 2100000, guid: c4f535e4fd24742ec9d697f1d86b9b95, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: chrome
-    second: {fileID: 2100000, guid: 5395b6e01062f4b06a0bdcf1c69329f9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: chrome_roller
-    second: {fileID: 2100000, guid: 1c2f95e7fbc974b5894980955d7134aa, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: chrome_window
-    second: {fileID: 2100000, guid: 7e977b28bb283484d8b7d2f38ac7d7f5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: essence_cap
-    second: {fileID: 2100000, guid: d40089fcc285049e6bb3204f9f160b2a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: exhaust
-    second: {fileID: 2100000, guid: d0e8075e2740f4372bfac024ffdad126, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: glass_mat
-    second: {fileID: 2100000, guid: 2ab260516ffb546ca88fb4bd25b72cfe, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: interior
-    second: {fileID: 2100000, guid: 15b472d98482f4f3a8c040de01ceba0a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: license_plate
-    second: {fileID: 2100000, guid: ff4c1d6e51b0f46069f39052e3ac7cbf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: logo1
-    second: {fileID: 2100000, guid: 54317a107a16a409dbc3428b4e603ae4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: logo2
-    second: {fileID: 2100000, guid: 862f7b3adaa4e45499979712071e1935, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: logo3
-    second: {fileID: 2100000, guid: 6249640730c8d4b32bd139e5bc5f0e3d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: rear_light
-    second: {fileID: 2100000, guid: 7f224b7a5b3934e3f923df577a2e07e3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: rim
-    second: {fileID: 2100000, guid: 050c55829f2f84b3fbd97ca336f9d51f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: roller
-    second: {fileID: 2100000, guid: 99bff44e3b9ad43919b895b32b1ed32f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: tire
-    second: {fileID: 2100000, guid: 8001b4ea5a42f4de9bf3561a30ef0e85, type: 2}
+    3300014: Burger Darkness
+    3300016: Burger door
+    3300018: Chassis
+    3300020: DashFlap
+    3300022: DashFlap Inside
+    3300024: Glasses
+    3300026: Interior
+    3300028: RearLight
+    3300030: RearMirror
+    3300032: Roller
+    3300034: Wheel0_graphics
+    3300036: Wheel1_graphics
+    3300038: Wheel2_graphics
+    3300040: Wheel3_graphics
+    4300000: Burger door
+    4300002: Burger Darkness
+    4300004: Body.002
+    4300006: Wheel1_graphics
+    4300008: Wheel3_graphics
+    4300010: Wheel2_graphics
+    4300012: Wheel0_graphics
+    4300014: Body.001
+    4300016: DashFlap
+    4300018: DashFlap Inside
+    4300020: RearLight
+    4300022: Interior
+    4300024: Glasses
+    4300026: Chassis
+    4300028: BrakeDisk3
+    4300030: BrakeDisk1
+    4300032: BrakeDisk2
+    4300034: BrakeDisk0
+    4300036: Roller
+    4300038: RearMirror
+    4300040: Body
+    7400000: Burger door|Burger doorAction
+    7400002: Burger door|smoke_parAction
+    7400004: Burger door|SmokeParAction
+    9500000: //RootNode
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -368,8 +191,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -393,7 +216,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
