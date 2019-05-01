@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1137124413348778}
+  m_IsPrefabAsset: 1
+--- !u!1 &1037544866203314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4210829218493076}
+  m_Layer: 0
+  m_Name: SP2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1137124413348778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4375060138109128}
+  - component: {fileID: 114244880640191156}
+  m_Layer: 0
+  m_Name: Refugee Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1562496545049726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4198437100260986}
+  m_Layer: 0
+  m_Name: SP2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4198437100260986
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1562496545049726}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.56, y: -5.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4375060138109128}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4210829218493076
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1037544866203314}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.24, y: -5.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4375060138109128}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4375060138109128
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137124413348778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.0936522, y: 5.71, z: 17.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4210829218493076}
+  - {fileID: 4198437100260986}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114244880640191156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137124413348778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b63ac633f6e416da1526498b29c76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refugee:
+  - {fileID: 1814696240447506, guid: 689196a84b9574b098615ae9986222e5, type: 2}
+  - {fileID: 1089208752313120, guid: 16b7a12d47f5847f294948604cae501f, type: 2}
+  - {fileID: 1367499338377504, guid: 4f48d2d799fc64ba1b357802f315647e, type: 2}
+  - {fileID: 1062311767124420, guid: 6ff814c7455d6446b9419e008c8ef1f8, type: 2}
+  - {fileID: 1069193177605884, guid: f1cf0ac7bc83345349a5b4671206e30b, type: 2}
+  - {fileID: 1484317291137940, guid: 9615b5558694f4b878eee0b8e743d401, type: 2}
+  - {fileID: 1561210853212608, guid: da8d65d1480cd40d7bd020b1f0e36c3b, type: 2}
+  - {fileID: 1434700305163820, guid: e012b5731be8042e5b16c409df44a553, type: 2}
+  - {fileID: 1540566976790036, guid: db5a34c283d48489f908222770ddada8, type: 2}
+  - {fileID: 1393017655449522, guid: 9aa0f102300194309a926feb3b1025eb, type: 2}
+  - {fileID: 1114550048528956, guid: 2c26fe84398a749dcaa45c8c72bd1d75, type: 2}
+  spawnTime: 1
+  spawnPoints:
+  - {fileID: 4210829218493076}
+  - {fileID: 4198437100260986}

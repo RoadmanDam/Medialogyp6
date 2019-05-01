@@ -409,9 +409,12 @@
      <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
      <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
      <Compile Include="Assets\PlaneScript.cs" />
+     <Compile Include="Assets\Refugees\RefMoover.cs" />
+     <Compile Include="Assets\Refugees\RefugeeSpawner.cs" />
      <Compile Include="Assets\Scripts\BurgerButtonScript.cs" />
      <Compile Include="Assets\Scripts\CarScript.cs" />
      <Compile Include="Assets\Scripts\controllerScript.cs" />
+     <Compile Include="Assets\Scripts\Hand.cs" />
      <Compile Include="Assets\Scripts\OculusGrab.cs" />
      <Compile Include="Assets\Scripts\Road.cs" />
      <Compile Include="Assets\Scripts\RoadTest.cs" />
