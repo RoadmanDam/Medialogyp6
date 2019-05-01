@@ -408,6 +408,7 @@
      <Compile Include="Assets\Oculus\VoiceMod\Scripts\Helpers\OVRMicInput.cs" />
      <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
      <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
+     <Compile Include="Assets\PlaneScript.cs" />
      <Compile Include="Assets\Scripts\BurgerButtonScript.cs" />
      <Compile Include="Assets\Scripts\CarScript.cs" />
      <Compile Include="Assets\Scripts\controllerScript.cs" />
@@ -430,6 +431,7 @@
      <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_Transparent.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_Loader.shader" />
      <None Include="Assets\NewtonVR\Resources\Shaders\Vignette.shader" />
+     <None Include="Assets\Low Poly Buildings Lite\ReadMe.txt" />
      <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Font\Northwest-Bold\ERIC-TIRADO-NORTHWEST-LICENSE.txt" />
      <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_02.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Stereo180Video\Plugins\Android\Audio360\ThirdPartyNotices.txt" />
@@ -699,16 +701,16 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Tayx.Graphy.Editor.csproj">
+      <Project>{E616B685-1C91-E768-BABF-68DF00883399}</Project>      <Name>Tayx.Graphy.Editor</Name>    </ProjectReference>
+    <ProjectReference Include="Tayx.Graphy.csproj">
+      <Project>{708D8799-76B0-9AE0-4D88-AD63CBF487D8}</Project>      <Name>Tayx.Graphy</Name>    </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
       <Project>{EEA3D3B3-355D-22D1-5EE2-D1748D64684C}</Project>      <Name>Oculus.VR.Editor</Name>    </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
       <Project>{A5404937-46FB-78E7-34B5-4199C5D6CE1F}</Project>      <Name>Oculus.VR.Scripts.Editor</Name>    </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
       <Project>{46BC943E-0F57-A151-724F-4AFC5A703B5B}</Project>      <Name>Oculus.VR</Name>    </ProjectReference>
-    <ProjectReference Include="Tayx.Graphy.Editor.csproj">
-      <Project>{E616B685-1C91-E768-BABF-68DF00883399}</Project>      <Name>Tayx.Graphy.Editor</Name>    </ProjectReference>
-    <ProjectReference Include="Tayx.Graphy.csproj">
-      <Project>{708D8799-76B0-9AE0-4D88-AD63CBF487D8}</Project>      <Name>Tayx.Graphy</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

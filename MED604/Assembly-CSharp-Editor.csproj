@@ -387,16 +387,16 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{E7FC7F6B-7E63-E18D-AC4F-2E7B23988ABD}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Tayx.Graphy.Editor.csproj">
+      <Project>{E616B685-1C91-E768-BABF-68DF00883399}</Project>      <Name>Tayx.Graphy.Editor</Name>    </ProjectReference>
+    <ProjectReference Include="Tayx.Graphy.csproj">
+      <Project>{708D8799-76B0-9AE0-4D88-AD63CBF487D8}</Project>      <Name>Tayx.Graphy</Name>    </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
       <Project>{EEA3D3B3-355D-22D1-5EE2-D1748D64684C}</Project>      <Name>Oculus.VR.Editor</Name>    </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
       <Project>{A5404937-46FB-78E7-34B5-4199C5D6CE1F}</Project>      <Name>Oculus.VR.Scripts.Editor</Name>    </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
       <Project>{46BC943E-0F57-A151-724F-4AFC5A703B5B}</Project>      <Name>Oculus.VR</Name>    </ProjectReference>
-    <ProjectReference Include="Tayx.Graphy.Editor.csproj">
-      <Project>{E616B685-1C91-E768-BABF-68DF00883399}</Project>      <Name>Tayx.Graphy.Editor</Name>    </ProjectReference>
-    <ProjectReference Include="Tayx.Graphy.csproj">
-      <Project>{708D8799-76B0-9AE0-4D88-AD63CBF487D8}</Project>      <Name>Tayx.Graphy</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
