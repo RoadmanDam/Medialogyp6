@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Narration_o_matic : MonoBehaviour {
 
 	public AudioSource audiosource;
-
+	public AudioClip bgMusic;
+	
+	[HideInInspector]
+	public float bgMusicTracker = 0;
 	
 	public List<NarrationPiece> narration_pieces = new List<NarrationPiece>();
 
@@ -28,7 +32,8 @@ public class Narration_o_matic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space)) {
-			Activate_clip();
+			/*Activate_clip(); */
+			PlayNextPiece();
 		}
 	}
 
@@ -38,10 +43,16 @@ public class Narration_o_matic : MonoBehaviour {
 	}
 
 	public void PlayNextPiece() {
-
+		narration_piece_iterator++;
+		PlayPiece(narration_piece_iterator);
 	}
 
 	public void PlayClip(AudioClip audio) {
+		if(bgMusicTracker == 0){
+			bgMusicTracker = audiosource.time;
+		}
+		audiosource.Stop();
+		audiosource.clip = audio;
 		audiosource.PlayOneShot(audio);
 	}
 
@@ -51,7 +62,9 @@ public class Narration_o_matic : MonoBehaviour {
 
 	public void PieceFinished() {
 		piece_playing = false;
-		printer("Piece finished");
+		audiosource.clip = bgMusic;
+		audiosource.time = bgMusicTracker;
+		audiosource.Play();
 	}
 
 	public void printer(string msg) {

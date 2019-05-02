@@ -9,7 +9,6 @@ public class NarrationPiece {
 
 	public Narration_o_matic narration_o_matic;
 	
-
 	[Header("In seconds")]
 	[Range(0,60)]
 	public float delay = 1;
@@ -25,7 +24,8 @@ public class NarrationPiece {
 	[HideInInspector]
 	public NarrationClip currentClip;
 
-	int clipIterator = -1;
+	[HideInInspector]
+	public int clipIterator = -1;
 
 	public void PlayNextClip() {
 		clipIterator++;
@@ -33,34 +33,44 @@ public class NarrationPiece {
 		if (clipIterator > narration_clips.Count - 1) {
 			clipIterator = -1;
 			NarrationPieceFinished();
-		} else if (!currentlyPlayingClip) {
+		} else if (!currentlyPlayingClip) {			
 			currentlyPlayingClip = true;
 			currentClip = narration_clips[clipIterator];
-			narration_o_matic.printer(currentClip.name);
-			narration_o_matic.GetComponent<Narration_o_matic>().PlayClip(currentClip.clip);
-			Action_in_piece(currentClip.action);
-			if (clipIterator - 1 > -1) {
-				narration_o_matic.StartCoroutine(ClipEnded(currentClip.clip.length, narration_clips[clipIterator-1].haveActivation));
+			if(clipIterator == 0){
+				narration_o_matic.StartCoroutine( DelayFirstClip(currentClip) );
 			} else {
-				narration_o_matic.StartCoroutine(ClipEnded(currentClip.clip.length));
+				narration_o_matic.GetComponent<Narration_o_matic>().PlayClip(currentClip.clip);
+				handleClipCallbacks(currentClip);
 			}
 		}
 	}
 
-	private IEnumerator ClipEnded(float clipLength, bool shouldNotAutomaticStart = true)
-    {
+	public void handleClipCallbacks(NarrationClip currentClip){
+		Action_in_piece(currentClip.action);
+		if (clipIterator - 1 > -1) {
+			narration_o_matic.StartCoroutine( ClipEnded( currentClip.clip.length, narration_clips[clipIterator-1].haveActivation) );
+		} else {
+			narration_o_matic.StartCoroutine( ClipEnded( currentClip.clip.length, narration_clips[0].haveActivation ) );
+		}
+	}
+
+	private IEnumerator DelayFirstClip(NarrationClip currentClip){
+		yield return new WaitForSeconds( delay );
+		narration_o_matic.GetComponent<Narration_o_matic>().PlayClip(currentClip.clip);
+		handleClipCallbacks(currentClip);
+	}
+
+	private IEnumerator ClipEnded(float clipLength, bool shouldNotAutomaticStart){
 		yield return new WaitForSeconds(clipLength + (time_between_clips));
 		currentlyPlayingClip = false;
-
 		if (!shouldNotAutomaticStart) {
-			narration_o_matic.PlayNextClipInPiece();
+				narration_o_matic.PlayNextClipInPiece();
 		} else if (clipIterator+1 > narration_clips.Count - 1) {
-			NarrationPieceFinished();
+				NarrationPieceFinished();
 		}
-    }
+	}
 
 	public void ActivateClip() {
-		narration_o_matic.printer(currentlyPlayingClip + "   " + narration_clips[clipIterator+1].haveActivation);
 		if (clipIterator + 1 <= narration_clips.Count - 1) {
 			if (!currentlyPlayingClip && narration_clips[clipIterator+1].haveActivation) {
 				PlayNextClip();
