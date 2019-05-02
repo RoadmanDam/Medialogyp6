@@ -9,6 +9,8 @@ public class BurgerButtonScript : MonoBehaviour {
 
 	public GameObject buttonRoot;
 
+	public GameObject burgerFab;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,9 +18,26 @@ public class BurgerButtonScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		 if (Button.ButtonDown)
-            {
-                buttonRoot.GetComponent<Animator>().Play("Burger Open");
-            }
+	}
+
+	private void OnTriggerEnter(Collider other) {
+		if ((other.name == "RightHandAnchor" || other.name == "LeftHandAnchor")) {
+			OpenBurgerDoor();
+		}
+	}
+
+	public void OpenBurgerDoor() {
+		if (!buttonRoot.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Burger Open"))
+			buttonRoot.GetComponent<Animator>().Play("Burger Open");
+	}
+
+	public void CloseBurgerDoor() {
+		if (!buttonRoot.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Burger Close"))
+			buttonRoot.GetComponent<Animator>().Play("Burger Close");
+	}
+
+	public void CreateNewBurger() {
+		//GameObject newBurger = Instantiate(burgerFab, burgerFab.transform.position, Quaternion.identity, buttonRoot.transform);
+		Invoke("CloseBurgerDoor", 1.5f);
 	}
 }

@@ -57,10 +57,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EatingBurgerScript.cs" />
      <Compile Include="Assets\Environment\Bird\BoidBehaviour.cs" />
      <Compile Include="Assets\Environment\Bird\BoidController.cs" />
      <Compile Include="Assets\Environment\Scripts\TerrainScript.cs" />
      <Compile Include="Assets\Environment\Windturbines\TurbineScript.cs" />
+     <Compile Include="Assets\Narration_o_matic\Narration_o_matic.cs" />
+     <Compile Include="Assets\Narration_o_matic\NarrationClip.cs" />
+     <Compile Include="Assets\Narration_o_matic\NarrationPiece.cs" />
      <Compile Include="Assets\NewtonVR\CollisionSoundFramework\NVRCollisionSoundController.cs" />
      <Compile Include="Assets\NewtonVR\CollisionSoundFramework\NVRCollisionSoundMaterials.cs" />
      <Compile Include="Assets\NewtonVR\CollisionSoundFramework\NVRCollisionSoundObject.cs" />
@@ -412,12 +416,14 @@
      <Compile Include="Assets\Refugees\RefMoover.cs" />
      <Compile Include="Assets\Refugees\RefugeeSpawner.cs" />
      <Compile Include="Assets\Scripts\BurgerButtonScript.cs" />
+     <Compile Include="Assets\Scripts\BurgerScript.cs" />
      <Compile Include="Assets\Scripts\CarScript.cs" />
      <Compile Include="Assets\Scripts\controllerScript.cs" />
      <Compile Include="Assets\Scripts\Hand.cs" />
      <Compile Include="Assets\Scripts\OculusGrab.cs" />
      <Compile Include="Assets\Scripts\Road.cs" />
      <Compile Include="Assets\Scripts\RoadTest.cs" />
+     <Compile Include="Assets\Scripts\ShowBurgerScript.cs" />
      <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Color Picker\G_CUIColorPicker.cs" />
      <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\CustomizeGraphy.cs" />
      <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\ForceSliderToMultipleOf3.cs" />

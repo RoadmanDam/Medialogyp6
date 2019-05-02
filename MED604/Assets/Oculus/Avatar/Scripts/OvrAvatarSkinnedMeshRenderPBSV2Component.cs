@@ -149,7 +149,7 @@ public class OvrAvatarSkinnedMeshPBSV2RenderComponent : OvrAvatarRenderComponent
         {
             if (!bone.name.Contains("ignore"))
             {
-                CreateCollider(bone);
+                //CreateCollider(bone);
             }
         }
 

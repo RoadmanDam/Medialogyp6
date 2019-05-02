@@ -71,13 +71,13 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102430766995192818
+--- !u!1102 &1102296157811270648
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Burger Hide
+  m_Name: Burger Close
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -90,7 +90,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1c96c2520d03b460795047b64d0dc4c3, type: 2}
+  m_Motion: {fileID: 7400000, guid: 52b4c025e37ddd84bbe348273938aa11, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -131,16 +131,16 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102770651553287736}
-    m_Position: {x: 276, y: 156, z: 0}
+    m_Position: {x: 252, y: 312, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102290335441797186}
-    m_Position: {x: 264, y: 24, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102430766995192818}
-    m_Position: {x: 299, y: 89, z: 0}
+    m_Position: {x: 252, y: 36, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102034182631363298}
-    m_Position: {x: 334, y: 154, z: 0}
+    m_Position: {x: 252, y: 180, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102296157811270648}
+    m_Position: {x: 251, y: 245, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

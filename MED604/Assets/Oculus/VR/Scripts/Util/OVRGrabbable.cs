@@ -22,6 +22,10 @@ using UnityEngine;
 /// </summary>
 public class OVRGrabbable : MonoBehaviour
 {
+    [HideInInspector]
+    public Vector3 ogPos;
+    [HideInInspector]
+    public Transform ogParent;
     [SerializeField]
     protected bool m_allowOffhandGrab = true;
     [SerializeField]
@@ -117,6 +121,10 @@ public class OVRGrabbable : MonoBehaviour
         m_grabbedBy = hand;
         m_grabbedCollider = grabPoint;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        // Check if grabbed is a burger
+        if (this.gameObject.tag == "Burger") {
+            this.BroadcastMessage("Grabbed");
+        }
     }
 
 	/// <summary>
@@ -125,12 +133,24 @@ public class OVRGrabbable : MonoBehaviour
 	virtual public void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)
     {
         Rigidbody rb = gameObject.GetComponent<Rigidbody>();
-        rb.isKinematic = m_grabbedKinematic;
-        rb.useGravity = true;
-        rb.velocity = linearVelocity;
-        rb.angularVelocity = angularVelocity;
+        rb.isKinematic = true;
+        rb.useGravity = false;
+        
+        this.gameObject.transform.SetParent(ogParent);
+        gameObject.SetActive(false);
+        this.gameObject.transform.localPosition = new Vector3(-0.129f, -0.014f, 0.078f);
+        this.gameObject.transform.rotation = Quaternion.Euler(-90, 0, 90);
+        print(gameObject.transform.position + "  og pos: " + ogPos);
+        
+        
         m_grabbedBy = null;
         m_grabbedCollider = null;
+    }
+
+    private void Update() {
+        if (m_grabbedBy != null) {
+            this.gameObject.SetActive(true);
+        }
     }
 
     void Awake()
@@ -152,6 +172,8 @@ public class OVRGrabbable : MonoBehaviour
     protected virtual void Start()
     {
         m_grabbedKinematic = GetComponent<Rigidbody>().isKinematic;
+        ogParent = this.transform.parent;
+        ogPos = this.transform.position;
     }
 
     void OnDestroy()
