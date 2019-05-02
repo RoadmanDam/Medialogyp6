@@ -6,6 +6,8 @@ using UnityEngine;
 public struct NarrationClip {
 	public string name;
 
+	public bool isIntermixed;
+
 	public bool haveActivation;
 
 	public string action;

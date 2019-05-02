@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class Narration_o_matic : MonoBehaviour {
 
+	public bool shouldBeIntermixed = false;
+
 	public AudioSource audiosource;
 	public AudioClip bgMusic;
 	
@@ -26,14 +28,6 @@ public class Narration_o_matic : MonoBehaviour {
 		}
 		if (!piece_playing) {
 			PlayPiece(narration_piece_iterator);
-		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown(KeyCode.Space)) {
-			/*Activate_clip(); */
-			PlayNextPiece();
 		}
 	}
 
@@ -61,6 +55,7 @@ public class Narration_o_matic : MonoBehaviour {
 	}
 
 	public void PieceFinished() {
+		print("PIECE FINISHED");
 		piece_playing = false;
 		audiosource.clip = bgMusic;
 		audiosource.time = bgMusicTracker;
@@ -82,7 +77,7 @@ public class Narration_o_matic : MonoBehaviour {
 				Instantiate(miniCube);
 			break;
 			default:
-				printer("NO REAL ACTION SPECIFIED (Misspell?)");
+				printer("NO REAL ACTION SPECIFIED (Misspell?) " + action);
 			break;
 		}
 	}

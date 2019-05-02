@@ -24,7 +24,7 @@ public class NarrationPiece {
 	[HideInInspector]
 	public NarrationClip currentClip;
 
-	[HideInInspector]
+	
 	public int clipIterator = -1;
 
 	public void PlayNextClip() {
@@ -33,14 +33,22 @@ public class NarrationPiece {
 		if (clipIterator > narration_clips.Count - 1) {
 			clipIterator = -1;
 			NarrationPieceFinished();
-		} else if (!currentlyPlayingClip) {			
+		} else if (!currentlyPlayingClip) {
+			narration_o_matic.printer(narration_clips[clipIterator].isIntermixed + "  " + narration_o_matic.shouldBeIntermixed);
+
 			currentlyPlayingClip = true;
 			currentClip = narration_clips[clipIterator];
-			if(clipIterator == 0){
+
+			if(clipIterator == 0 && (narration_clips[clipIterator].isIntermixed && narration_o_matic.shouldBeIntermixed)) {
 				narration_o_matic.StartCoroutine( DelayFirstClip(currentClip) );
-			} else {
+				return;
+			} else if((narration_clips[clipIterator].isIntermixed && narration_o_matic.shouldBeIntermixed)){
 				narration_o_matic.GetComponent<Narration_o_matic>().PlayClip(currentClip.clip);
 				handleClipCallbacks(currentClip);
+				return;
+			} else if(narration_clips[clipIterator].isIntermixed && !narration_o_matic.shouldBeIntermixed){
+				narration_o_matic.printer("Should skip this clip");
+				ClipEnded(0, true);
 			}
 		}
 	}
@@ -60,10 +68,10 @@ public class NarrationPiece {
 		handleClipCallbacks(currentClip);
 	}
 
-	private IEnumerator ClipEnded(float clipLength, bool shouldNotAutomaticStart){
+	private IEnumerator ClipEnded(float clipLength, bool shouldNotAutomaticStart = true){
 		yield return new WaitForSeconds(clipLength + (time_between_clips));
 		currentlyPlayingClip = false;
-		if (!shouldNotAutomaticStart) {
+		if (shouldNotAutomaticStart) {
 				narration_o_matic.PlayNextClipInPiece();
 		} else if (clipIterator+1 > narration_clips.Count - 1) {
 				NarrationPieceFinished();
@@ -71,6 +79,7 @@ public class NarrationPiece {
 	}
 
 	public void ActivateClip() {
+		narration_o_matic.printer("ACTIVATED CLIP");
 		if (clipIterator + 1 <= narration_clips.Count - 1) {
 			if (!currentlyPlayingClip && narration_clips[clipIterator+1].haveActivation) {
 				PlayNextClip();

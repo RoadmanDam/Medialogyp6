@@ -7,6 +7,8 @@ public class BurgerScript : MonoBehaviour {
 	public BurgerButtonScript burgerButtonScript;
 	public GameObject particles;
 
+	public Narration_o_matic narration_o_matic;
+
 	bool firstGrab = true;
 	bool grapped = false;
 
@@ -35,5 +37,6 @@ public class BurgerScript : MonoBehaviour {
 		particles.transform.parent = burgerButtonScript.buttonRoot.transform;
 		particles.transform.position = this.transform.position;
 		this.gameObject.GetComponent<OVRGrabbable>().GrabEnd(Vector3.zero, Vector3.zero);
+		narration_o_matic.Activate_clip();
 	}
 }
