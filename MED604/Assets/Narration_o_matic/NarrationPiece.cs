@@ -28,54 +28,56 @@ public class NarrationPiece {
 	public int clipIterator = -1;
 
 	public void PlayNextClip() {
-		clipIterator++;
-		narration_o_matic.printer("Clip "+clipIterator);
+		clipIterator += 1;
+		narration_o_matic.printer("Clip " + clipIterator);
 		if (clipIterator > narration_clips.Count - 1) {
 			clipIterator = -1;
 			NarrationPieceFinished();
 		} else if (!currentlyPlayingClip) {
-			narration_o_matic.printer(narration_clips[clipIterator].isIntermixed + "  " + narration_o_matic.shouldBeIntermixed);
 
 			currentlyPlayingClip = true;
 			currentClip = narration_clips[clipIterator];
+			
 
-			if(clipIterator == 0 && (narration_clips[clipIterator].isIntermixed && narration_o_matic.shouldBeIntermixed)) {
+			if(clipIterator == 0) {
 				narration_o_matic.StartCoroutine( DelayFirstClip(currentClip) );
 				return;
-			} else if((narration_clips[clipIterator].isIntermixed && narration_o_matic.shouldBeIntermixed)){
-				narration_o_matic.GetComponent<Narration_o_matic>().PlayClip(currentClip.clip);
+			} else {
+				if (narration_o_matic.shouldBeIntermixed) {
+					narration_o_matic.GetComponent<Narration_o_matic>().PlayClip(currentClip.intermixedClip);
+				} else {
+					narration_o_matic.GetComponent<Narration_o_matic>().PlayClip(currentClip.clip);
+				}
+				
 				handleClipCallbacks(currentClip);
 				return;
-			} else if(narration_clips[clipIterator].isIntermixed && !narration_o_matic.shouldBeIntermixed){
-				narration_o_matic.printer("Should skip this clip");
-				ClipEnded(0, true);
 			}
 		}
 	}
 
 	public void handleClipCallbacks(NarrationClip currentClip){
 		Action_in_piece(currentClip.action);
-		if (clipIterator - 1 > -1) {
-			narration_o_matic.StartCoroutine( ClipEnded( currentClip.clip.length, narration_clips[clipIterator-1].haveActivation) );
-		} else {
-			narration_o_matic.StartCoroutine( ClipEnded( currentClip.clip.length, narration_clips[0].haveActivation ) );
-		}
+		narration_o_matic.StartCoroutine( ClipEnded( currentClip.clip.length) ); 
 	}
 
 	private IEnumerator DelayFirstClip(NarrationClip currentClip){
 		yield return new WaitForSeconds( delay );
-		narration_o_matic.GetComponent<Narration_o_matic>().PlayClip(currentClip.clip);
+		if (narration_o_matic.shouldBeIntermixed) {
+			narration_o_matic.GetComponent<Narration_o_matic>().PlayClip(currentClip.intermixedClip);
+		} else {
+			narration_o_matic.GetComponent<Narration_o_matic>().PlayClip(currentClip.clip);
+		}
 		handleClipCallbacks(currentClip);
 	}
 
 	private IEnumerator ClipEnded(float clipLength, bool shouldNotAutomaticStart = true){
 		yield return new WaitForSeconds(clipLength + (time_between_clips));
 		currentlyPlayingClip = false;
-		if (shouldNotAutomaticStart) {
-				narration_o_matic.PlayNextClipInPiece();
-		} else if (clipIterator+1 > narration_clips.Count - 1) {
+		
+		if (clipIterator+1 > narration_clips.Count - 1) {
 				NarrationPieceFinished();
-		}
+		} else 
+			narration_o_matic.PlayNextClipInPiece();
 	}
 
 	public void ActivateClip() {

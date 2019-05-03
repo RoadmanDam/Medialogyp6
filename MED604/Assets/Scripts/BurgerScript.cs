@@ -28,8 +28,10 @@ public class BurgerScript : MonoBehaviour {
 		burgerButtonScript.CreateNewBurger();
 	}
 	public void ShowBurger() {
+		this.transform.rotation = Quaternion.Euler(-90, 0, 90);
 		this.gameObject.SetActive(true);
 		particles.transform.parent = this.transform;
+		narration_o_matic.UpdateBurgerAmount();
 	}
 
 	public void EatBurger() {

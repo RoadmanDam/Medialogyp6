@@ -27,7 +27,7 @@ public class BurgerButtonScript : MonoBehaviour {
 	}
 
 	public void OpenBurgerDoor() {
-		if (!buttonRoot.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Burger Open"))
+		if (buttonRoot.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Burger Closed"))
 			buttonRoot.GetComponent<Animator>().Play("Burger Open");
 	}
 

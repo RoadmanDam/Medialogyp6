@@ -1,11 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
 public class Narration_o_matic : MonoBehaviour {
 
 	public bool shouldBeIntermixed = false;
+
+	public Text burgerAmountText;
+
+	public RefugeeSpawner refSpawner;
+	public BoidController birdSpawner;
+
+	[HideInInspector]
+	public int burgerAmount = 0;
 
 	public AudioSource audiosource;
 	public AudioClip bgMusic;
@@ -19,8 +28,6 @@ public class Narration_o_matic : MonoBehaviour {
 
 	bool piece_playing = false;
 
-	public GameObject miniCube;
-
 	// Use this for initialization
 	void Start () {
 		foreach(NarrationPiece piece in narration_pieces) {
@@ -33,6 +40,7 @@ public class Narration_o_matic : MonoBehaviour {
 
 	public void PlayPiece(int iteration) {
 		piece_playing = true;
+		narration_pieces[iteration].clipIterator = -1;
 		narration_pieces[iteration].PlayNextClip();
 	}
 
@@ -73,8 +81,14 @@ public class Narration_o_matic : MonoBehaviour {
 			case "RAIN":
 				printer("It's gon rain");
 			break;
-			case "SPAWN CUBE":
-				Instantiate(miniCube);
+			case "START REFUGESS":
+				refSpawner.StartSpawn();
+			break;
+			case "TORNADO":
+
+			break;
+			case "BIRDS":
+				birdSpawner.Spawn(burgerAmount);
 			break;
 			default:
 				printer("NO REAL ACTION SPECIFIED (Misspell?) " + action);
@@ -86,6 +100,11 @@ public class Narration_o_matic : MonoBehaviour {
 		if (!narration_pieces[narration_piece_iterator].currentlyPlayingClip) {
 			narration_pieces[narration_piece_iterator].ActivateClip();
 		}
+	}
+
+	public void UpdateBurgerAmount() {
+		burgerAmount++;
+		burgerAmountText.text = burgerAmount + "x";
 	}
 
 }

@@ -46,23 +46,16 @@ public class BoidController : MonoBehaviour
 
     public LayerMask searchLayer;
 
-    void Start()
+
+    public void Spawn(int decrease)
     {
-        for (var i = 0; i < spawnCount; i++) Spawn();
+        for (var i = 0; i < spawnCount; i++) Spawn(transform.position + Random.insideUnitSphere * spawnRadius);
+        spawnCount -= decrease;
+        if (spawnCount < 1)
+            spawnCount = 1;
     }
 
-    void ActivateBirds()
-    {
-        gameObject.SetActive(true);
-    }
-
-    public GameObject Spawn()
-    {
-        return Spawn(transform.position + Random.insideUnitSphere * spawnRadius);
-    }
-
-    public GameObject Spawn(Vector3 position)
-    {
+    public GameObject Spawn(Vector3 position) {
         var rotation = Quaternion.Slerp(transform.rotation, Random.rotation, 0.3f);
         print(boidPrefab);
         var boid = Instantiate(boidPrefab, position, rotation) as GameObject;
