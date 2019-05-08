@@ -13579,6 +13579,83 @@ Prefab:
       propertyPath: birdSpawner
       value: 
       objectReference: {fileID: 1814123370}
+    - target: {fileID: 4199399058222634, guid: 1c91c25efec9a1f4b8e5a636934d240a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.196
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199399058222634, guid: 1c91c25efec9a1f4b8e5a636934d240a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.276
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199399058222634, guid: 1c91c25efec9a1f4b8e5a636934d240a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.508
+      objectReference: {fileID: 0}
+    - target: {fileID: 23352962952667888, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0931c15e54845bd41ac6c7d7b3c52d5e, type: 2}
+    - target: {fileID: 23352962952667888, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 306e9c2c56100554c97ffaf02d3106d4, type: 2}
+    - target: {fileID: 23352962952667888, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7c53e83ed450e17469e0813b4c373002, type: 2}
+    - target: {fileID: 23352962952667888, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80f2d875849928745aae623e57976bdd, type: 2}
+    - target: {fileID: 23352962952667888, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 985c8c6c1edfe854295dedabdb4fd20b, type: 2}
+    - target: {fileID: 23088084783551494, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 306e9c2c56100554c97ffaf02d3106d4, type: 2}
+    - target: {fileID: 23088084783551494, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0931c15e54845bd41ac6c7d7b3c52d5e, type: 2}
+    - target: {fileID: 23088084783551494, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7c53e83ed450e17469e0813b4c373002, type: 2}
+    - target: {fileID: 23088084783551494, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80f2d875849928745aae623e57976bdd, type: 2}
+    - target: {fileID: 23088084783551494, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 985c8c6c1edfe854295dedabdb4fd20b, type: 2}
+    - target: {fileID: 114306703201425632, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114306703201425632, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114306703201425632, guid: 1c91c25efec9a1f4b8e5a636934d240a,
+        type: 2}
+      propertyPath: m_Text
+      value: 0x
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c91c25efec9a1f4b8e5a636934d240a, type: 2}
   m_IsPrefabAsset: 0
@@ -50237,7 +50314,7 @@ GameObject:
   m_Layer: 0
   m_Name: TornadoPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

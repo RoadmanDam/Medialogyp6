@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RefMoover : MonoBehaviour {
 
-    public float refSlideSpeed = 1.5f;
+    float refSlideSpeed = 2.5f;
     const float refLength = 60;
 
     void Start () {

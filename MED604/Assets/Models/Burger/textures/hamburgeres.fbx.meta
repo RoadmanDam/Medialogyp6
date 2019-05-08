@@ -31,11 +31,36 @@ ModelImporter:
     4300002: Cheeseburger
     4300004: Hamburger
     10800000: Lamp
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 9eab6fc0f7e0f5e4685cb56f4ecb569b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 9eab6fc0f7e0f5e4685cb56f4ecb569b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 9eab6fc0f7e0f5e4685cb56f4ecb569b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 9eab6fc0f7e0f5e4685cb56f4ecb569b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: cd1e542be7d7c4c4780d4e677eca082b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
-    materialSearch: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -65,7 +90,6 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -90,9 +114,6 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
