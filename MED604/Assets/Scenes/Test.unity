@@ -13616,8 +13616,6 @@ Prefab:
       propertyPath: m_Text
       value: 0x
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
     - target: {fileID: 114598748086337912, guid: 1c91c25efec9a1f4b8e5a636934d240a,
         type: 2}
       propertyPath: narration_pieces.Array.data[0].narration_clips.Array.data[2].haveActivation
@@ -13863,7 +13861,6 @@ Prefab:
       propertyPath: roadSpeed
       value: 15
       objectReference: {fileID: 0}
->>>>>>> Added narration pieces and their clips, + road speed tweak
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c91c25efec9a1f4b8e5a636934d240a, type: 2}
   m_IsPrefabAsset: 0
