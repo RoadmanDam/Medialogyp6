@@ -4,12 +4,14 @@ public class RefugeeSpawner : MonoBehaviour
 {
 
     public GameObject[] refugee = new GameObject[2];
-    public float spawnTime = 60f;
+    public float spawnTime = .1f;
     public Transform[] spawnPoints;
 
     public Narration_o_matic narration_o_matic;
 
-    public float lowerLimit = 5f;
+    public float lowerLimit = .1f;
+
+    public bool shouldSpawn = true;
 
     void Start ()
     {
@@ -21,12 +23,18 @@ public class RefugeeSpawner : MonoBehaviour
     }
 
     public void StartSpawn() {
-        Spawn();
-        spawnTime -= 10f;
-        if (spawnTime < lowerLimit) {
-            spawnTime = lowerLimit;
+        if (shouldSpawn) {
+            Spawn();
+            spawnTime -= 1f;
+            if (spawnTime < lowerLimit) {
+                spawnTime = lowerLimit;
+            }
         }
         Invoke("StartSpawn", spawnTime);
+    }
+
+    public void StopSpawn() {
+        shouldSpawn = false;
     }
 
 

@@ -8,9 +8,13 @@ public class Narration_o_matic : MonoBehaviour {
 
 	public bool shouldBeIntermixed = false;
 
+	public Transform intermixedTransform, overloadedTransform, hmd;
+
 	public Text burgerAmountText;
 
 	public RefugeeSpawner refSpawner;
+
+	public GameObject tornado;
 	public BoidController birdSpawner;
 
 	[HideInInspector]
@@ -30,6 +34,15 @@ public class Narration_o_matic : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		if (shouldBeIntermixed) {
+			overloadedTransform.gameObject.SetActive(false);
+			intermixedTransform.gameObject.SetActive(true);
+		} else {
+			overloadedTransform.gameObject.SetActive(true);
+			intermixedTransform.gameObject.SetActive(false);
+		}
+
 		foreach(NarrationPiece piece in narration_pieces) {
 			piece.narration_o_matic = this.GetComponent<Narration_o_matic>();
 		}
@@ -90,7 +103,10 @@ public class Narration_o_matic : MonoBehaviour {
 				refSpawner.StartSpawn();
 			break;
 			case "TORNADO":
-
+				tornado.SetActive(true);
+			break;
+			case "STOP REFUGEES":
+				refSpawner.StopSpawn();
 			break;
 			case "BIRDS":
 				birdSpawner.Spawn(burgerAmount);
@@ -110,6 +126,19 @@ public class Narration_o_matic : MonoBehaviour {
 	public void UpdateBurgerAmount() {
 		burgerAmount++;
 		burgerAmountText.text = burgerAmount + "x";
+	}
+
+
+	private void OnTriggerEnter(Collider other)
+	{
+		print(other.gameObject.tag);
+		if (other.gameObject.tag == "Finish") {
+			EndGame();
+		}
+	}
+
+	void EndGame() {
+		hmd.gameObject.GetComponent<OVRScreenFade>().FadeOut();
 	}
 
 }

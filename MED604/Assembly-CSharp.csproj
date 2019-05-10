@@ -424,6 +424,7 @@
      <Compile Include="Assets\Scripts\Road.cs" />
      <Compile Include="Assets\Scripts\RoadTest.cs" />
      <Compile Include="Assets\Scripts\ShowBurgerScript.cs" />
+     <Compile Include="Assets\Scripts\Transition.cs" />
      <Compile Include="Assets\Stuff\Weather Particles\Rain and Tornado\Rain\RainMaker\Prefab\BaseRainScript.cs" />
      <Compile Include="Assets\Stuff\Weather Particles\Rain and Tornado\Rain\RainMaker\Prefab\RainCollision.cs" />
      <Compile Include="Assets\Stuff\Weather Particles\Rain and Tornado\Rain\RainMaker\Prefab\RainScript.cs" />
@@ -455,6 +456,7 @@
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBS.shader" />
      <None Include="Assets\Oculus\Avatar\Samples\SocialStarter\README.txt" />
      <None Include="Assets\Oculus\SampleFramework\license.txt" />
+     <None Include="Assets\rain\RainShader.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_CombinedMesh.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\Avatar_Mobile_CombinedMeshExpressive.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\Avatar_PC_SingleComponentExpressive.shader" />
