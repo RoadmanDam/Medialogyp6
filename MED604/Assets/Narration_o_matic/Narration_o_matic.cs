@@ -68,6 +68,11 @@ public class Narration_o_matic : MonoBehaviour {
 		audiosource.clip = bgMusic;
 		audiosource.time = bgMusicTracker;
 		audiosource.Play();
+
+		if (narration_piece_iterator + 1 < narration_pieces.Count) {
+			print("Starting next piece");
+			Invoke("PlayNextPiece", narration_pieces[narration_piece_iterator + 1].delay);
+		}
 	}
 
 	public void printer(string msg) {
@@ -81,7 +86,7 @@ public class Narration_o_matic : MonoBehaviour {
 			case "RAIN":
 				printer("It's gon rain");
 			break;
-			case "START REFUGESS":
+			case "START REFUGEES":
 				refSpawner.StartSpawn();
 			break;
 			case "TORNADO":

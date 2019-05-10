@@ -3,8 +3,15 @@
 	"configurations":[ 
 		{
 			"name":"Unity",
+<<<<<<< HEAD
 			"type":"unity",
 			"request":"launch",
+=======
+			"type":"mono",
+			"request":"attach",
+			"address":"localhost",
+			"port":13512
+>>>>>>> Added narration pieces and their clips, + road speed tweak
 		}
 	]
 }

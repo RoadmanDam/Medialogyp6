@@ -9,11 +9,11 @@ public class RefugeeSpawner : MonoBehaviour
 
     public Narration_o_matic narration_o_matic;
 
-    public float lowerLimit = 10f;
+    public float lowerLimit = 5f;
 
     void Start ()
     {
-       Invoke("StartSpawn", spawnTime);
+       //Invoke("StartSpawn", spawnTime);
     }
 
     void Update(){
@@ -22,7 +22,7 @@ public class RefugeeSpawner : MonoBehaviour
 
     public void StartSpawn() {
         Spawn();
-        spawnTime -= narration_o_matic.burgerAmount;
+        spawnTime -= 10f;
         if (spawnTime < lowerLimit) {
             spawnTime = lowerLimit;
         }
