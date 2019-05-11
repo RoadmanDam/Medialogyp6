@@ -425,6 +425,7 @@
      <Compile Include="Assets\Scripts\RoadTest.cs" />
      <Compile Include="Assets\Scripts\ShowBurgerScript.cs" />
      <Compile Include="Assets\Scripts\Transition.cs" />
+     <Compile Include="Assets\Skybox\SkyboxChanger.cs" />
      <Compile Include="Assets\Stuff\Weather Particles\Rain and Tornado\Rain\RainMaker\Prefab\BaseRainScript.cs" />
      <Compile Include="Assets\Stuff\Weather Particles\Rain and Tornado\Rain\RainMaker\Prefab\RainCollision.cs" />
      <Compile Include="Assets\Stuff\Weather Particles\Rain and Tornado\Rain\RainMaker\Prefab\RainScript.cs" />

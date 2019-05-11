@@ -8,9 +8,9 @@ public class Narration_o_matic : MonoBehaviour {
 
 	public bool shouldBeIntermixed = false;
 
-	public Transform intermixedTransform, overloadedTransform, hmd;
+	public Transform intermixedTransform, overloadedTransform, hmd, rainTrans;
 
-	public Text burgerAmountText;
+	public Text burgerAmountText, canvasBurgerAmountText;
 
 	public RefugeeSpawner refSpawner;
 
@@ -96,21 +96,31 @@ public class Narration_o_matic : MonoBehaviour {
 		
 		switch (action)
 		{
-			case "RAIN":
-				printer("It's gon rain");
+			case "START RAIN":
+				GetComponent<SkyboxChanger>().skyboxWant = 2;
+				rainTrans.gameObject.SetActive(true);
+			break;
+
+			case "STOP RAIN":
+				GetComponent<SkyboxChanger>().skyboxWant = 1;
+				rainTrans.gameObject.SetActive(false);
 			break;
 			case "START REFUGEES":
 				refSpawner.StartSpawn();
 			break;
-			case "TORNADO":
-				tornado.SetActive(true);
-			break;
+
 			case "STOP REFUGEES":
 				refSpawner.StopSpawn();
 			break;
+
+			case "TORNADO":
+				tornado.SetActive(true);
+			break;
+
 			case "BIRDS":
 				birdSpawner.Spawn(burgerAmount);
 			break;
+
 			default:
 				printer("NO REAL ACTION SPECIFIED (Misspell?) " + action);
 			break;
@@ -126,6 +136,7 @@ public class Narration_o_matic : MonoBehaviour {
 	public void UpdateBurgerAmount() {
 		burgerAmount++;
 		burgerAmountText.text = burgerAmount + "x";
+		canvasBurgerAmountText.text = burgerAmount + "";
 	}
 
 
