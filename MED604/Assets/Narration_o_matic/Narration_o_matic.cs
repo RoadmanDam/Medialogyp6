@@ -49,6 +49,10 @@ public class Narration_o_matic : MonoBehaviour {
 		if (!piece_playing) {
 			PlayPiece(narration_piece_iterator);
 		}
+
+		audiosource.clip = bgMusic;
+		audiosource.time = bgMusicTracker;
+		audiosource.Play();
 	}
 
 	public void PlayPiece(int iteration) {

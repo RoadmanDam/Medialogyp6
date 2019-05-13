@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: 74fb9127cbac2584a9adf6178218402f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Beer
+    100004: Bin
+    100006: Car
+    100008: Car.001
+    100010: Car.002
+    100012: Car.003
+    100014: Car.004
+    100016: Car.005
+    100018: MAG_T2_16_PERRONE_01
+    100020: MAG_T2_16_PERRONE_01.001
+    100022: Police_Car
+    100024: Trash_container
+    400000: //RootNode
+    400002: Beer
+    400004: Bin
+    400006: Car
+    400008: Car.001
+    400010: Car.002
+    400012: Car.003
+    400014: Car.004
+    400016: Car.005
+    400018: MAG_T2_16_PERRONE_01
+    400020: MAG_T2_16_PERRONE_01.001
+    400022: Police_Car
+    400024: Trash_container
+    2100000: Material.025
+    2100002: Material.012
+    2100004: Material.010
+    2100006: Material.013
+    2100008: Material.016
+    2100010: Material.014
+    2100012: Material.023
+    2100014: Material.022
+    2100016: Material.019
+    2100018: Material.020
+    2100020: Material.021
+    2100022: Material.018
+    2100024: Material.017
+    2100026: Material.011
+    2100028: Pavillon-M.001
+    2100030: Material.003
+    2100032: Material.004
+    2100034: Material.006
+    2100036: Material.008
+    2100038: Material.005
+    2100040: Material.002
+    2100042: Material.001
+    2100044: Material.009
+    2100046: Material.007
+    2100048: Material.039
+    2100050: Material.050
+    2100052: Material.047
+    2100054: Material.046
+    2100056: Material.045
+    2300000: Beer
+    2300002: Bin
+    2300004: Car
+    2300006: Car.001
+    2300008: Car.002
+    2300010: Car.003
+    2300012: Car.004
+    2300014: Car.005
+    2300016: MAG_T2_16_PERRONE_01
+    2300018: MAG_T2_16_PERRONE_01.001
+    2300020: Police_Car
+    2300022: Trash_container
+    3300000: Beer
+    3300002: Bin
+    3300004: Car
+    3300006: Car.001
+    3300008: Car.002
+    3300010: Car.003
+    3300012: Car.004
+    3300014: Car.005
+    3300016: MAG_T2_16_PERRONE_01
+    3300018: MAG_T2_16_PERRONE_01.001
+    3300020: Police_Car
+    3300022: Trash_container
+    4300000: Car.005
+    4300002: Car.004
+    4300004: Car.003
+    4300006: Police_Car
+    4300008: Car.002
+    4300010: Car.001
+    4300012: Car
+    4300014: MAG_T2_16_PERRONE_01
+    4300016: MAG_T2_16_PERRONE_01.001
+    4300018: Beer
+    4300020: Bin
+    4300022: Trash_container
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 4ba8e45ec1a44f74da6919d8bccd9b1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: b34e95e18921d13489140f58d08c14bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: ebebced8dc1bdcb4bb05eaacc9935d0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: cd821e1b005baad4a94c962b24059f6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 5f553691cd23ecd46a68c5165fb32c7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: c017934f34f49eb488b7d30f59fdc6f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 1aea76fe81ef4ec4db440f200d21b482, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: 0afb149f3752ec94e9b0e76e7650ae13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: cc750b10be49b0247993a301f1fb119d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.010
+    second: {fileID: 2100000, guid: 9f2b71d58a6b1b4419ccc58b9d617f37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: f1f0e2dc4b60a684e8aa9d615846cb4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: 0235d94d42170ee498c04694dc818a16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.013
+    second: {fileID: 2100000, guid: 5204719b58c125247ab61cfafc8f9b14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.014
+    second: {fileID: 2100000, guid: 917c66df426ee3f4380bfeb79d8f24b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.016
+    second: {fileID: 2100000, guid: 97cee650467901643a6f0a350bc3bd79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.017
+    second: {fileID: 2100000, guid: 6ead854c69ca39e458dc5b034d7f88c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.018
+    second: {fileID: 2100000, guid: 7bd8cf611c64cbf4081a239dc0c23721, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.019
+    second: {fileID: 2100000, guid: ecff3356ac1dc3743a5b4d73c5c44b02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.020
+    second: {fileID: 2100000, guid: 110300fb81c93614cbaf822f0427ffea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.021
+    second: {fileID: 2100000, guid: 4f2214da1c28b594c8546bfa21c81163, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.022
+    second: {fileID: 2100000, guid: 6044748253f21ba41981de19e07bb17d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.023
+    second: {fileID: 2100000, guid: 4f52c73316b3d07408fbb79dd55aaa57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.025
+    second: {fileID: 2100000, guid: f1fde4fabfa206742adb8569e0267685, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.039
+    second: {fileID: 2100000, guid: 8e60c697abee4bb40820adbc0e050b55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.045
+    second: {fileID: 2100000, guid: 8e09fce5f03bcb7478c30cfba3c9f354, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.046
+    second: {fileID: 2100000, guid: e0fa3bccb63ef0049a523c1ec32b7222, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.047
+    second: {fileID: 2100000, guid: f392e75fff441ed45bb69a8205caa106, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.050
+    second: {fileID: 2100000, guid: d434ab6096165e64999d50096fe55d48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pavillon-M.001
+    second: {fileID: 2100000, guid: 87af19bde9464ea4f8ee00be2357484e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
